@@ -1,0 +1,21 @@
+.searchBar{
+text-align: start;
+width: 40vw;
+height: 6vh;
+font-size: 25px;
+margin-top: 20px;
+padding-left: 10px;
+border: 1px solid #d0d7de;
+border-radius: 6px ;
+}
+
+
+@media (max-width:780px) {
+ .searchBar{
+      
+      width: 80vw;
+      text-align: center;
+ 
+      }    
+      
+}
