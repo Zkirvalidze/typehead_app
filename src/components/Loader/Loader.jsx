@@ -3,10 +3,10 @@ import { useStateContext } from '../../context/StateContextProvider';
 import './Loader.module.css';
 
 export default function Loader() {
-  const { loading } = useStateContext();
+  const { isLoading } = useStateContext();
 
   return (
-    loading && (
+    isLoading && (
       <div className="lds-default">
         <div></div>
         <div></div>
