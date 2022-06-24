@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStateContext } from '../../context/StateContextProvider';
-import './Loader.module.css';
+import './Loader.css';
 
 export default function Loader() {
   const { isLoading } = useStateContext();

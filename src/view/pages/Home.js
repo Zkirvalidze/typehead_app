@@ -37,7 +37,6 @@ const Home = () => {
       <Header />
       <SearchBar />
       <Loader />
-
       <UserList />
     </main>
   );
