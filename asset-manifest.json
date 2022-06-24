@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/typehead_app/static/css/main.4422fb22.css",
+    "main.js": "/typehead_app/static/js/main.657571b0.js",
+    "static/media/images.png": "/typehead_app/static/media/images.8abe23f064cb3f2e6d94.png",
+    "index.html": "/typehead_app/index.html",
+    "main.4422fb22.css.map": "/typehead_app/static/css/main.4422fb22.css.map",
+    "main.657571b0.js.map": "/typehead_app/static/js/main.657571b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4422fb22.css",
+    "static/js/main.657571b0.js"
+  ]
+}
