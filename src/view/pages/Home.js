@@ -8,7 +8,7 @@ import { useStateContext } from '../../context/StateContextProvider';
 import { fetchUsers } from '../../api/github/Client';
 
 const Home = () => {
-  const { searchTerm, setData, setLoading } = useStateContext();
+  const { searchTerm, setData, setIsLoading } = useStateContext();
   const debouncedSearch = useDebounce(searchTerm, 500);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Home = () => {
   }, [debouncedSearch]);
 
   function fetchGithubUsers(searchTerm) {
-    setLoading(true);
+    setIsLoading(true);
     fetchUsers(searchTerm)
       .then((res) => {
         setData(res.items);
@@ -29,7 +29,7 @@ const Home = () => {
         throw new Error(`${err.message}`);
       })
       .finally(() => {
-        setLoading(false);
+        setIsLoading(false);
       });
   }
   return (
